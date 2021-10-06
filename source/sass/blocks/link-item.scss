@@ -1,0 +1,10 @@
+.link-item {
+  line-height: 17px;
+  color: $basic-dark;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    color: $basic-coral;
+  }
+}

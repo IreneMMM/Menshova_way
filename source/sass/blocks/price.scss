@@ -1,0 +1,111 @@
+.price {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 133px;
+
+    @media (max-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    @media (max-width: $mobile-width) {
+        margin-bottom: 50px;
+    }
+}
+
+.price__info {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: $tablet-width) {
+        order: 0;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+.price__title {
+    position: relative;
+    font-size: 55px;
+    line-height: 90px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 50px;
+
+    &::after {
+        content: "";
+        height: 3px;
+        width: 175px;
+        background-color: $basic-pink;
+        position: absolute;
+        left: 0;
+        top: 108px;
+    }
+
+    @media (max-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 20px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    @media (max-width: $mobile-width) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.price__description {
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0;
+    margin-bottom: 60px;
+    opacity: 0.7;
+
+    @media (max-width: $tablet-width) {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+.price__contact-text {
+    font-size: 22px;
+    line-height: 34px;
+    color: $basic-dark;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 13px;
+    padding-left: 50px;
+}
+
+.price__contact-phone {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 32px;
+    text-decoration: none;
+    color: $basic-black;
+    position: relative;
+    padding-left: 50px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 18px;
+        color: $basic-pink;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../img/phone.svg");
+        left: 0;
+    }
+}

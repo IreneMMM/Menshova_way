@@ -1,0 +1,28 @@
+.next-trips {
+
+    @media (max-width: $tablet-width) {
+        border-right: 1px solid $footer-border;
+        margin-right: 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+        border-bottom: 1px solid $footer-border;
+        border-right: none;
+        width: 100%;
+    }
+}
+
+.next-trips__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+
+    @media (max-width: $tablet-width) {
+        padding-right: 0;
+    }
+
+    @media (max-width: $mobile-width) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

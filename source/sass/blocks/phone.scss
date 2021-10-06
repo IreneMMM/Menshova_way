@@ -1,0 +1,24 @@
+.phone {
+  font-size: 18px;
+  line-height: 32px;
+  color: $basic-dark;
+  width: 230px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $basic-coral;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.phone-icon {
+  fill: none;
+
+  &:hover {
+    stroke: $basic-coral;
+  }
+}

@@ -1,0 +1,148 @@
+.main-header {
+  background-color: $basic-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 50px;
+  }
+}
+
+.main-header--nojs .main-header__toggle {
+  display: none;
+}
+
+.main-header--closed .site-navigation {
+  @media (max-width: $tablet-width) {
+  display: none;
+  }
+}
+
+.main-header--opened .site-navigation {
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    min-width: 100%;
+    height: 400px;
+    background-color: $basic-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 84px;
+
+    & .site-navigation__item {
+      padding: 15px;
+      background-color: $basic-grey;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    & .link-item {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+      color: $basic-font-dark;
+    }
+  }
+}
+
+.main-header--opened .main-header__toggle {
+  top: 0;
+  right: 0;
+  left: auto;
+  background-color: $basic-white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    width: 33px;
+    height: 2px;
+    background-color: $basic-dark;
+    opacity: 0.2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-header__logo {
+  width: 57px;
+  height: 22px;
+
+  @media (max-width: $tablet-width) {
+    width: 44px;
+    height: 16px;
+  }
+}
+
+.main-header--opened .main-header__logo {
+display: none;
+}
+
+.main-header__toggle {
+  display: none;
+
+  @media screen and (max-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: $basic-pink;
+    border: none;
+    cursor: pointer;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 34%;
+      width: 22px;
+      height: 1px;
+      background-color: $basic-white;
+      box-shadow: 0 8px 0 0 $basic-white, 0 16px 0 0 $basic-white;
+    }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: $basic-pink;
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 34%;
+      width: 22px;
+      height: 1px;
+      background-color: $basic-white;
+      box-shadow: 0 8px 0 0 $basic-white, 0 16px 0 0 $basic-white;
+    }
+  }
+
+}

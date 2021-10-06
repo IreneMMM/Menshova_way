@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: $basic-font;
+
+  @media screen and (max-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+  
+  @media screen and (max-width: $tablet-width) {
+    max-width: 1023px;
+    min-width: 768px;
+    padding: 0 21px;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    max-width: 767px;
+    min-width: 320px;
+    padding: 0 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

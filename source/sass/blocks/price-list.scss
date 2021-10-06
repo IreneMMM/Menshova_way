@@ -1,0 +1,113 @@
+.price-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 70px;
+
+    @media (max-width: $tablet-width) {
+        margin: 0;
+        justify-content: center;
+    }
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+.price-list__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+
+    @media (max-width: $tablet-width) {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+.price-list__item {
+    width: 370px;
+    min-height: 614px;
+    padding: 40px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-right: 30px;
+    align-items: flex-start;
+    border-radius: 6px;
+    border: 1px solid rgba(44, 46, 63, 0.3);
+
+    @media (max-width: $tablet-width) {
+        max-width: 288px;
+        padding: 20px 10px 0;
+    }
+
+    @media (max-width: $tablet-width) {
+        margin: 0;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+
+    &--active {
+        border: 3px solid $basic-pink;
+    }
+}
+
+.price-list__item:nth-child(2) {
+    margin-right: 0;
+}
+
+.price-list__item--active .price-list__name,
+.price-list__item--active .price-list__cost {
+    color: $basic-pink;
+    opacity: 1;
+}
+
+.price-list__name {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 600;
+    letter-spacing: -1.27px;
+    color: $basic-dark;
+    opacity: 0.7;
+    margin: 0;
+
+    @media (max-width: $tablet-width) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.price-list__intro {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 58px;
+
+    @media (max-width: $tablet-width) {
+       text-align: center;
+       margin-bottom: 20px;
+    }
+}
+
+.price-list__cost {
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 700;
+    color: $basic-dark;
+    opacity: 0.7;
+
+    @media (max-width: $tablet-width) {
+        margin: 0;
+    }
+}
+
+.price-list__button {
+    padding: 30px;
+    margin-top: auto;
+    align-self: center;
+}

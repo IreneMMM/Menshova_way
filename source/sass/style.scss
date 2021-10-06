@@ -1,0 +1,31 @@
+// Глобальные
+
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/button.scss";
+@import "global/fonts.scss";
+
+
+// Шапка
+
+@import "blocks/main-header.scss";
+@import "blocks/link-item.scss";
+@import "blocks/site-navigation.scss";
+@import "blocks/phone.scss";
+@import "blocks/promo.scss";
+@import "blocks/places.scss";
+@import "blocks/places-list.scss";
+@import "blocks/tabs.scss";
+@import "blocks/tabs-countries-list.scss";
+@import "blocks/tabs-list.scss";
+@import "blocks/review.scss";
+@import "blocks/price.scss";
+@import "blocks/price-list.scss";
+@import "blocks/package-list.scss";
+
+@import "blocks/feedback.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/next-trips.scss";
+@import "blocks/trips-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/corporate-trip.scss";

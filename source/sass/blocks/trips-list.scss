@@ -1,0 +1,42 @@
+.trips-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    max-width: 33%;
+    margin-right: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: none;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 21px;
+    padding-right: 15px;
+  }
+}
+
+.trips-list__item {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
+}
+
+.trips-list__link {
+  text-decoration: none;
+  line-height: 17px;
+  color: $basic-dark;
+  opacity: 0.5;
+}

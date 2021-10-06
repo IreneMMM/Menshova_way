@@ -1,0 +1,19 @@
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 650px;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: 30px;
+
+  @media screen and (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.site-navigation__item {
+  margin-right: 40px;
+}

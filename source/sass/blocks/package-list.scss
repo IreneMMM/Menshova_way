@@ -1,0 +1,29 @@
+.package-list {
+    padding: 0;
+    list-style: none;
+}
+
+.package-list__item {
+    font-size: 16px;
+    line-height: 32px;
+    position: relative;  
+    margin-bottom: 15px;
+    padding-left: 30px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
+.package-list__item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 12px;
+    content: "\2713";
+    font-size: 25px;
+    font-weight: 600;
+    color: #FE7865;
+}

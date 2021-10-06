@@ -1,0 +1,143 @@
+.tabs {
+  position: relative;
+  margin-bottom: 234px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+    height: 1219px;
+
+    background-image: url("../../img/directions.svg");
+    background-repeat: no-repeat;
+    background-position-y: 134px;
+    background-position-x: 50%;
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+    
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.tabs__title {
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  letter-spacing: -1.25px;
+  margin: 0;
+  margin-bottom: 50px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size:24px;
+    line-height: 36px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $basic-pink;
+    bottom: -22px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    z-index: 2;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.tabs__description {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  margin: 0;
+  margin-bottom: 50px;
+  color: rgba(44, 46, 63, 0.7);
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.tabs__wrapper {
+  display: flex;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.tabs__info-column {
+  max-width: 370px;
+  margin-right: 100px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.tabs__img-column {
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+}
+
+.tabs__img {
+  max-width: 430px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+}
+
+.tabs__button {
+  max-width: 250px;
+  max-height: 75px;
+  padding: 30px;
+
+  @media (max-width: $tablet-width) {
+    padding: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 288px;
+  }
+}

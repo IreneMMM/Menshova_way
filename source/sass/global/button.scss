@@ -1,0 +1,41 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: $basic-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: $basic-pink;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-coral;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.3);
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 288px;
+  }
+}
